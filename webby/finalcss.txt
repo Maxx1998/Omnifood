@@ -1,0 +1,439 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #555;
+}
+.clearfix {zoom: 1}/*----------clears float---------*/
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
+/*-------------------------------------COMMON--------------------------------------*/
+.row{
+    width: 1140px;
+    margin: 0 auto;
+    
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%;
+}
+
+
+/*---------------------------------------HEADER--------------------------------------*/
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(back1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    margin-top: 0;
+    font-size: 240%;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 300;
+    word-spacing: 4px;
+}
+.hero{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);}
+.btn:link,
+.btn:visited,
+input[type=button]{
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 200px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: background-color 0.2s,border 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=button]{
+    border: 2px solid #e67e22;
+    background-color: #e67e22;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 2px solid #e67e22;
+    padding: 10px 20px;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=button]:hover,
+input[type=button]:active{
+    border: 2px solid #d35400;
+    background-color: #d35400;
+    
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 2px solid #d35400;
+    background-color: #d35400;
+}
+.logo{
+    float: left;
+    width: 10%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.main-list{
+    float: right;
+    list-style: none;
+    width: 45%;
+    
+    margin-top: 4%;
+}
+.main-list li{
+    display: inline-block;
+    margin-right: 2%;
+}
+.main-list li a:link,
+.main-list li a:visited{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+    font-weight: 300;
+}
+.main-list li a:hover,
+.main-list li a:active{
+ border-bottom: 2px solid #e67e22;
+}
+/*----------------------------------------SECTION-FEATURES--------------------*/
+h2{
+    font-size: 180%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color:#e67e22 ;
+    content: " ";
+    margin:auto;
+}
+.long-copy{
+    width: 70%;
+    margin-left: 15%;
+}
+h3{
+    font-size: 110%;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+    margin-bottom: 15px;
+
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.icon-big{
+    color: #e67e22;
+    font-size: 350%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*-----------------------------SECTION-MEALS--------------------------*/
+.meal-list{
+    list-style: none;
+    width: 100%;
+    
+    
+}
+.meal-list li{
+    width: 25%;
+    display: block;
+    float: left;
+    background-color: black;
+    overflow: hidden;
+    
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+.meal-photo img:hover{
+    opacity: 1;
+    
+    transform: scale(1.03);
+}
+/*---------------------------------STEPS--------------------------------------------*/
+
+.steps-box:first-child
+{
+text-align: right;
+padding-right: 3%;
+margin-top: 30px;
+}
+.steps-box:last-child
+{
+padding-left: 3%;
+margin-top: 70px;
+}
+
+.iphone
+{
+    width: 40%;
+}
+.work-steps
+{
+    margin-bottom: 50px;
+}
+.work-steps div{
+    color:#e67e22 ;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+
+}
+
+
+
+
+
+
+
+/*---------------------------------CITIES----------------------------------------------*/
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.icon-small{
+    color: #e67e22;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+a:hover,
+a:active{
+    
+    color: #555;
+    border-bottom: 1px solid transparent;
+    
+}
+/*-----------------------SECTION-CUSTOMERS---------------------------------*/
+.section-testimonals{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(back-customers.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    color: aliceblue;
+    background-attachment: fixed;/*-----the background image doesnt change it's position when scrolled-------*/
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;/*-------when we give a child element in poistion absolute the parent has to be in pposition relative -------------*/
+    margin-top: 40px;
+}
+blockquote:before
+{
+    content: "\201C";/*----qoutation mark code------------------*/
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+}
+cite img{
+    height: 50px;
+    border-radius: 45%;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*---------------------------------SECTION-SIGNUP--------------------------------------------*/
+.section-plans{
+background-color: #f4f4f4;;
+}
+.plan-box
+{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;/*to make it come in center*/
+    box-shadow: 0 2px 2px #efefef;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color:#e67e22
+
+}
+.plan-price-meal{
+    font-size: 80%;
+
+
+}
+.plan-price span{
+    font-size: 30%;/*since span is the child element of plan-price which has a font-size of 300% ........it's font-size will be relative to that....100% of span is 300%*/
+    font-weight: 400;
+     ;
+}
+.plan-box ul{
+    list-style: none;
+
+    
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+.plan-box div:first-child{
+    background-color:#fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/*---------------------------------------------CONTACT-FORM-------------------------------------------------*/
+.contact-form{
+    width: 60%;
+    
+    margin: 0 auto;/*to make it centered*/
+}
+input[type=text],
+input[type=email],select,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.form-box{
+    
+    width: 100%;
+}
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]
+{
+    margin: 10px 5px 10px 0;
+}
+/*-----------------------------FOOTER-------------------------------*/
+footer{
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links
+{
+    list-style:  none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+display: inline-block;
+margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+text-decoration: none;
+border: 0;/*-----border is given in cities link------*/
+color: #888;
+transition: color 0.5s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+footer p{
+    color: #888;
+    text-align: center;
+    
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+.icon-facebook:hover{
+   color:  #3b5998;
+}
+.icon-twitter:hover{
+    color: #00aced;
+}
+.icon-linkedin:hover{
+    color:  #007bb6;
+}
+.icon-instagram:hover{
+    color: #517fa4;
+}
+.icon-facebook,.icon-twitter,.icon-linkedin,.icon-instagram{
+    transition: color 0.5s;
+}

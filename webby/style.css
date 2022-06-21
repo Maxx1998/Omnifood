@@ -1,0 +1,510 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+}
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+section
+{
+    padding: 80px 0;
+
+}
+.box{
+    padding: 1%;
+}
+
+.clearfix {zoom: 1}/*----------clears float---------*/
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
+/*-------------------HEADER-------------------------*/
+header{
+    
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(breakfast-gebfbbff08_1920-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.hero{
+    position: absolute;
+    width: 1140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+h1{
+    margin-top: 0;
+    font-size: 240%;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: aliceblue;
+    word-spacing: 4px;
+
+}
+.main-list{
+    float: right;
+    width: 45%;
+
+    list-style: none;
+
+    margin-top: 6%;
+}
+.main-list li{
+    float: left;
+    margin-right: 2%;
+
+}
+.main-list li a:link,
+.main-list li a:visited{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 110%;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.main-list li a:hover,
+.main-list li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+.logo{
+    float: left;
+    width: 10%;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+
+.btn,
+input[type=button]{
+    padding: 10px 30px  ;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 200px;
+    transition:background-color 0.5s,border 0.5s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=button]
+{
+    border: 2px solid #e67e22;
+    background-color: #e67e22;
+    margin-right: 2%;
+}
+.btn-full:active,
+.btn-full:hover,
+input[type=button]:hover,
+input[type=button]:active{
+    border: 2px solid #cf6d17;
+    background-color: #cf6d17;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    padding: 10px 20px;
+    border: 2px solid #e67e22;
+
+}
+
+.btn-ghost:active,
+.btn-ghost:hover{
+    border: 2px solid #cf6d17;
+    background-color: #cf6d17;
+}
+/*-----------------------FEATURES--------------------*/
+h2{
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+}
+h2::after
+{
+    content: " ";
+    display: block;
+    background-color: #e67e22;
+    height: 2px;
+    width: 100px;
+    margin: auto;
+}
+.long-copy{
+    margin-left: 15%;
+    width: 70%;
+}
+
+h3{
+    font-size: 110%;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    
+}
+.box p{
+    line-height: 145%;
+    font-size: 90%;
+}
+.icon-big{
+    color: #e67e22;
+    font-size: 350%;
+}
+
+/*------------------------MEALS-----------------------*/
+
+.meal-list 
+{
+    width: 100%;
+    list-style: none;
+}
+.meal-list li
+{
+    width: 25%;
+    display: block;
+    float: left;
+    background-color: #e67e22;
+    overflow: hidden;
+}
+
+.meal-photo img
+{
+    opacity: 0.7;
+    width: 100%;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+
+}
+.meal-list img:hover
+{
+    transform: scale(1.05);
+    opacity: 1;
+}
+/*------------------STEPS------------------------------*/
+
+.steps-section:first-child
+{
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 3%;
+}
+.steps-section:last-child
+{
+margin-top: 70px;
+padding-left: 3%;
+}
+.phone-image
+{
+    width: 40%;
+    
+}
+.simple-steps div
+{
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    float: left;
+    margin-right: 2%;
+    padding: 1%;
+    font-size: 150%;
+    
+
+}
+.simple-steps{
+    margin-bottom: 50px;
+
+}
+/*--------------------------CITIES-----------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+}
+.icon-small
+{
+    color: #e67e22;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.box a:visited,
+.box a:link{
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+    transition: border-bottom 0.5s;
+}
+
+.box a:hover,
+.box a:active
+{
+    color: #555;
+    border-bottom: 2px solid transparent;
+}
+
+
+
+
+
+
+
+
+/*------------------------CUSTOMERS--------------------------*/
+.customers
+{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(back-customers.jpg);
+    color: aliceblue;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+cite img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 2%;
+    
+}
+cite
+{
+    font-size: 90%;
+    margin-top: 30px;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;/*-------when we give a child element in poistion absolute the parent has to be in pposition relative -------------*/
+    margin-top: 40px;
+}
+blockquote:before
+{
+    content: "\201C";/*----qoutation mark code------------------*/
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+
+}
+/*------------------SIGN-UP--------------------------------------*/
+.sign-up{
+    background-color: #f4f4f4;
+}
+.plan-box{
+    width: 90%;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 5%;/*to make it come in center*/
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom:2px solid #f4f4f4;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color:#e67e22
+
+}
+.plan-price-meal{
+    font-size: 80%;
+
+
+}
+.plan-price span{
+    font-size: 30%;/*since span is the child element of plan-price which has a font-size of 300% ........it's font-size will be relative to that....100% of span is 300%*/
+    font-weight: 400;
+     
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+.plan-box div:first-child{
+    background-color:#fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------CONTACT-FORM--------------------*/
+.contact-form{
+    width: 60%;
+    
+    margin: 0 auto;/*to make it centered*/
+}
+input[type=text],
+input[type=email],select,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.form-box{
+    
+    width: 100%;
+}
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]
+{
+    margin: 10px 5px 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------FOOTER--------------------*/
+footer
+{
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+
+}
+
+.links{
+    color: aliceblue;
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+
+
+}
+.links li{
+    float: left;
+    margin-right: 6%;
+}
+.links li a{
+    text-decoration: none;
+    color: aliceblue;
+    transition:    color 0.5s ;
+}
+.links li a:hover
+{
+    color: #555;
+}
+.social-links{
+    color: aliceblue;
+    list-style: none;
+    float: right;
+    width: 40%;
+
+}
+.social-links li{
+    float: left;
+    margin-right: 6%;
+    
+}
+footer p{
+    text-align: center;
+}
+.icon-snapchat
+{
+    color: aliceblue;
+    font-size: 150%;
+    transition: color 0.5s;
+}
+.icon-snapchat:hover
+{
+    color: #fffc00;
+}
+.icon-twitter{
+    color: aliceblue;
+    font-size: 150%;
+    transition: color 0.5s;
+}
+.icon-twitter:hover
+{
+    color: #55acee;
+}
+.icon-instagram
+{
+    color: aliceblue;
+    font-size: 150%;
+    transition: color 0.5s;
+
+}
+.icon-instagram:hover
+{
+    color: #bc2a8d;
+}
+
+.icon-pinterest{
+    color: aliceblue;
+    font-size: 150%;
+    transition: color 0.5s;
+}
+.icon-pinterest:hover
+{
+   color: #cb2027 ;
+
+}
+
+
